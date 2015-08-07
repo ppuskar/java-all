@@ -5,6 +5,8 @@ import com.all.java.design.pattern.template.model.ExecutorContext;
 
 public class SampleScheduledTaskService extends AbstractScheduledService {
 
+	protected Class clazz = getClass();
+
 	@Override
 	protected void execute(ExecutorContext context) {
 		// TODO Auto-generated method stub
