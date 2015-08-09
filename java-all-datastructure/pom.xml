@@ -1,13 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.all.java</groupId>
-  <artifactId>java-all</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <parent>
+    <groupId>com.all.java</groupId>
+    <artifactId>java-all</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>java-all-datastructure</artifactId>
   <packaging>pom</packaging>
   <modules>
-  	<module>java-all-design-pattern</module>
-  	<module>java-all-thread</module>
-  	<module>java-all-datastructure</module>
-  	<module>java-all-algo</module>
+  	<module>java-all-datastructure-sorting</module>
+  	<module>java-all-datastructure-tree</module>
   </modules>
 </project>
