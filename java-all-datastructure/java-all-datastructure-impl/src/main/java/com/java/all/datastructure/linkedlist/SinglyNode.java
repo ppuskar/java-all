@@ -1,5 +1,11 @@
 package com.java.all.datastructure.linkedlist;
 
+/**
+ * Data structure capable of holding data and pointer to the next record.
+ * 
+ * @author Illusion
+ * @created Aug 24, 2015
+ */
 public class SinglyNode {
 
 	private int data;
@@ -34,5 +40,4 @@ public class SinglyNode {
 	public void setNext(SinglyNode next) {
 		this.next = next;
 	}
-
 }
