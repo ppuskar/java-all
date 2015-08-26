@@ -1,5 +1,7 @@
 package com.java.all.datastructure.linkedlist;
 
+import com.java.all.datastructure.LinkedList;
+
 public class App {
 	public static void main(String[] args) {
 		LinkedList linkedList = new LinkedListOperation();

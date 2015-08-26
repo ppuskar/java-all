@@ -1,5 +1,8 @@
 package com.java.all.datastructure.linkedlist;
 
+import com.java.all.datastructure.LinkedList;
+import com.java.all.datastructure.linkedlist.model.SinglyNode;
+
 /**
  * Implementation for {@link LinkedList}
  * 
@@ -13,7 +16,7 @@ public class LinkedListOperation implements LinkedList {
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override
+	@Override	
 	public void add(int data) {
 		SinglyNode nodeToAdd = createNode(data), hold = root;
 		if (root == null) {

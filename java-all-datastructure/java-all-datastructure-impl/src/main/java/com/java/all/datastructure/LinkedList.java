@@ -1,4 +1,4 @@
-package com.java.all.datastructure.linkedlist;
+package com.java.all.datastructure;
 
 /**
  * Interface defining Method for operations over a linked list.

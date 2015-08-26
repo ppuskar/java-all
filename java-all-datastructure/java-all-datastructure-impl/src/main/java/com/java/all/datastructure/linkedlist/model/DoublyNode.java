@@ -1,4 +1,4 @@
-package com.java.all.datastructure.linkedlist;
+package com.java.all.datastructure.linkedlist.model;
 
 /**
  * Node containing pointer to left and right nodes along with data and a flag to
