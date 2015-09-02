@@ -1,8 +1,8 @@
 package com.java.all.datastructure.stack;
 
-import com.java.all.datastructure.Stack;
+import com.java.all.datastructure.PStack;
 
-public class StackLinkedListImpl implements Stack {
+public class StackLinkedListImpl implements PStack {
 
 	private final int[] DATA_STORE;
 	private int topIndex;

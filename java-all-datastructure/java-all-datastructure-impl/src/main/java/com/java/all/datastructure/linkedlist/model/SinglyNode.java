@@ -6,7 +6,7 @@ package com.java.all.datastructure.linkedlist.model;
  * @author Illusion
  * @created Aug 24, 2015
  */
-public class SinglyNode {
+public class SinglyNode implements PNode {
 
 	private int data;
 	private SinglyNode next;

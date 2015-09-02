@@ -6,7 +6,7 @@ package com.java.all.datastructure;
  * @author Illusion
  * @created Aug 24, 2015
  */
-public interface LinkedList {
+public interface PLinkedList {
 
 	/**
 	 * Add data to linked list.

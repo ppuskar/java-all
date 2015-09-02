@@ -1,6 +1,10 @@
 package com.java.all.thread.concurrency;
 
 import java.io.Reader;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
+import java.util.concurrent.ThreadPoolExecutor;
 
 import com.java.all.thread.concurrency.data.Counter;
 import com.java.all.thread.concurrency.threads.ModifierThread;
@@ -14,22 +18,21 @@ public class ConcurrencyControl {
 		ModifierThread modifier = new ModifierThread(data);
 		ReaderThread reader = new ReaderThread(data);
 
-		Thread t = new Thread(modifier);
-		Thread t2 = new Thread(modifier);
-		Thread t3 = new Thread(modifier);
-		Thread tr1 = new Thread(reader);
-		Thread tr2 = new Thread(reader);
-		Thread tr3 = new Thread(reader);
-		Thread tr4 = new Thread(reader);
-		Thread tr5 = new Thread(reader);
-		t.start();
-		t2.start();
-		t3.start();
-		tr1.start();
-		tr2.start();
-		tr3.start();
-		// tr4.start();
-		// tr5.start();
+		ExecutorService executor = Executors.newFixedThreadPool(2);
+		executor.submit(modifier);
+		executor.submit(reader);
+		executor.submit(modifier);
+		executor.submit(reader);
+		executor.submit(modifier);
+		executor.submit(reader);
+		executor.submit(modifier);
+		executor.submit(reader);
+		executor.submit(modifier);
+		executor.submit(reader);
+		executor.submit(modifier);
+		executor.submit(reader);
+		executor.submit(modifier);
+		Future<?> submit = executor.submit(reader);
 	}
 
 	public static void sleep(long value) {
@@ -39,5 +42,9 @@ public class ConcurrencyControl {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	public static void runBatchThread(int numberOfThread) {
+
 	}
 }

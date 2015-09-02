@@ -1,6 +1,6 @@
 package com.java.all.datastructure;
 
-public interface Stack {
+public interface PStack {
 
 	void push(int data);
 

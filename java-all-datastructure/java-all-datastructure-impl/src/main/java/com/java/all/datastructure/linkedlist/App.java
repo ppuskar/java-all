@@ -1,10 +1,10 @@
 package com.java.all.datastructure.linkedlist;
 
-import com.java.all.datastructure.LinkedList;
+import com.java.all.datastructure.PLinkedList;
 
 public class App {
 	public static void main(String[] args) {
-		LinkedList linkedList = new LinkedListOperation();
+		PLinkedList linkedList = new LinkedListOperation();
 		linkedList.add(10);
 		linkedList.add(20);
 		linkedList.add(30);

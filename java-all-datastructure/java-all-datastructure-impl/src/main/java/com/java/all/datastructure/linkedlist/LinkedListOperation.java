@@ -1,15 +1,15 @@
 package com.java.all.datastructure.linkedlist;
 
-import com.java.all.datastructure.LinkedList;
+import com.java.all.datastructure.PLinkedList;
 import com.java.all.datastructure.linkedlist.model.SinglyNode;
 
 /**
- * Implementation for {@link LinkedList}
+ * Implementation for {@link PLinkedList}
  * 
  * @author Illusion
  * @created Aug 24, 2015
  */
-public class LinkedListOperation implements LinkedList {
+public class LinkedListOperation implements PLinkedList {
 
 	private SinglyNode root;
 

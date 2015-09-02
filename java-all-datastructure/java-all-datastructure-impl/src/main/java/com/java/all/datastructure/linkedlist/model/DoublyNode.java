@@ -7,7 +7,7 @@ package com.java.all.datastructure.linkedlist.model;
  * @author Illusion
  *
  */
-public class DoublyNode {
+public class DoublyNode implements PNode {
 
 	private DoublyNode left;
 	private int data;

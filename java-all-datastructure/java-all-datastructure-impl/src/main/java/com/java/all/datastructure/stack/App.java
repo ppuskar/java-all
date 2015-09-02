@@ -1,11 +1,11 @@
 package com.java.all.datastructure.stack;
 
-import com.java.all.datastructure.Stack;
+import com.java.all.datastructure.PStack;
 
 public class App {
 
 	public static void main(String[] args) {
-		Stack stack = new StackLinkedListImpl(5);
+		PStack stack = new StackLinkedListImpl(5);
 		stack.push(10);
 		stack.push(20);
 		stack.push(30);
