@@ -2,20 +2,22 @@ package com.java.all.datastructure.stack;
 
 import com.java.all.datastructure.PStack;
 
-public class StackLinkedListImpl implements PStack {
+public class StackLinkedListImpl<T> implements PStack<T> {
 
-	private final int[] DATA_STORE;
+	private int initialCapacity = 10;
+	private T[] DATA_STORE;
 	private int topIndex;
 	private int initialcapacity;
 
+	@SuppressWarnings("unchecked")
 	public StackLinkedListImpl(int initialSize) {
-		this.DATA_STORE = new int[initialSize];
 		this.topIndex = -1;
 		this.initialcapacity = initialSize;
+		DATA_STORE = (T[]) new Object[Math.max(initialSize, initialCapacity)];
 	}
 
 	@Override
-	public void push(int data) {
+	public void push(T data) {
 		if (topIndex < (initialcapacity - 1)) {
 			DATA_STORE[++topIndex] = data;
 		} else {
@@ -24,20 +26,20 @@ public class StackLinkedListImpl implements PStack {
 	}
 
 	@Override
-	public int pop() {
+	public T pop() {
 		if (topIndex != -1)
 			return DATA_STORE[topIndex--];
 
 		System.out.println("Stack is empty..");
-		return -1;
+		return null;
 	}
 
 	@Override
-	public int peek() {
+	public T peek() {
 		if (topIndex != -1)
 			return DATA_STORE[topIndex];
 		System.out.println("Stack is empty..");
-		return -1;
+		return null;
 	}
 
 	@Override

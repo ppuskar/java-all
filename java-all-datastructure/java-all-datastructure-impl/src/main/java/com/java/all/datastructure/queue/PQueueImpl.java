@@ -9,7 +9,7 @@ public class PQueueImpl<T> implements PQueue<T> {
 	@SuppressWarnings("unchecked")
 	private T DATA_ARRAY[] = (T[]) new Object[DEFAULT_INITIAL_SIZE];
 	private int front = -1;// dequeued using this
-	private int rear = -1;// enqueued usinbg this
+	private int rear = -1;// enqueued usunbg this
 	private int currentQueueCapacity;
 	private int totalDataCount = 0;
 
@@ -68,7 +68,7 @@ public class PQueueImpl<T> implements PQueue<T> {
 		DATA_ARRAY = newDataArray;
 	}
 
-	@SuppressWarnings("unchecked")
+	
 	@Override
 	public T dequeue() throws PQueueException {
 		if (totalDataCount == 0) {

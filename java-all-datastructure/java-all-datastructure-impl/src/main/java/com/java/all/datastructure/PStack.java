@@ -1,12 +1,12 @@
 package com.java.all.datastructure;
 
-public interface PStack {
+public interface PStack<T> {
 
-	void push(int data);
+	void push(T data);
 
-	int pop();
+	T pop();
 
-	int peek();
+	T peek();
 
 	int size();
 }

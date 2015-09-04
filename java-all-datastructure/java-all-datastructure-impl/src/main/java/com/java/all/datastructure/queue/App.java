@@ -1,7 +1,5 @@
 package com.java.all.datastructure.queue;
 
-import java.util.Deque;
-
 import com.java.all.datastructure.PQueue;
 import com.java.all.datastructure.PQueueException;
 
