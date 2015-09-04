@@ -12,6 +12,9 @@ public class App {
 		stack.push(40);
 		stack.push(50);
 		stack.push(60);
+		stack.push(70);
+		stack.push(80);
+		stack.push(90);
 
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
@@ -24,6 +27,10 @@ public class App {
 		// System.out.println("peek:"+stack.peek());
 		System.out.println(stack.pop());
 		// System.out.println("peek:"+stack.peek());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
+		System.out.println(stack.pop());
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
 		System.out.println(stack.pop());
