@@ -6,7 +6,7 @@ public class StackLinkedListImpl<T> implements PStack<T> {
 
 	private T[] DATA_STORE;
 	private int topIndex;
-	private int defaultCapacity = 5;
+	private int defaultCapacity = 10;
 	private int size = 0;
 
 	@SuppressWarnings("unchecked")

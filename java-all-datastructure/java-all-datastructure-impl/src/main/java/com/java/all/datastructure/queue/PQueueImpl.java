@@ -5,9 +5,9 @@ import com.java.all.datastructure.PQueueException;
 
 public class PQueueImpl<T> implements PQueue<T> {
 
-	private final static int DEFAULT_INITIAL_SIZE = 5;
+	private final static int DEFAULT_CAPACITY = 10;
 	@SuppressWarnings("unchecked")
-	private T DATA_ARRAY[] = (T[]) new Object[DEFAULT_INITIAL_SIZE];
+	private T DATA_ARRAY[] = (T[]) new Object[DEFAULT_CAPACITY];
 	private int front = -1;// dequeued using this
 	private int rear = -1;// enqueued usunbg this
 	private int currentQueueCapacity;
@@ -17,7 +17,7 @@ public class PQueueImpl<T> implements PQueue<T> {
 	 * default constructor, initializes queue with default size 10.
 	 */
 	public PQueueImpl() {
-		this(DEFAULT_INITIAL_SIZE);
+		this(DEFAULT_CAPACITY);
 	}
 
 	/**
@@ -26,7 +26,7 @@ public class PQueueImpl<T> implements PQueue<T> {
 	 *            default initial size of the queue.
 	 */
 	public PQueueImpl(int initialSize) {
-		currentQueueCapacity = Math.max(initialSize, DEFAULT_INITIAL_SIZE);
+		currentQueueCapacity = Math.max(initialSize, DEFAULT_CAPACITY);
 	}
 
 	/**
