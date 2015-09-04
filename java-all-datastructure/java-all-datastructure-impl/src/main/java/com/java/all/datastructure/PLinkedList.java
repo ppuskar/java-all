@@ -6,7 +6,7 @@ package com.java.all.datastructure;
  * @author Illusion
  * @created Aug 24, 2015
  */
-public interface PLinkedList {
+public interface PLinkedList<T> {
 
 	/**
 	 * Add data to linked list.
@@ -14,7 +14,7 @@ public interface PLinkedList {
 	 * @param data
 	 *            data to add.
 	 */
-	void add(int data);
+	void add(T data);
 
 	/**
 	 * print all data inside a linked-list.
@@ -31,5 +31,5 @@ public interface PLinkedList {
 	 * 
 	 * @param data
 	 */
-	void deleteNode(int data);
+	void deleteNode(T data);
 }

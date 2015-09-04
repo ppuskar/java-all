@@ -6,15 +6,15 @@ package com.java.all.datastructure.linkedlist.model;
  * @author Illusion
  * @created Aug 24, 2015
  */
-public class SinglyNode implements PNode {
+public class SinglyNode<T> implements PNode {
 
-	private int data;
-	private SinglyNode next;
+	private T data;
+	private SinglyNode<T> next;
 
 	/**
 	 * @return the data
 	 */
-	public int getData() {
+	public T getData() {
 		return data;
 	}
 
@@ -22,14 +22,14 @@ public class SinglyNode implements PNode {
 	 * @param data
 	 *            the data to set
 	 */
-	public void setData(int data) {
+	public void setData(T data) {
 		this.data = data;
 	}
 
 	/**
 	 * @return the next
 	 */
-	public SinglyNode getNext() {
+	public SinglyNode<T> getNext() {
 		return next;
 	}
 

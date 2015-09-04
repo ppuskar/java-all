@@ -4,7 +4,7 @@ import com.java.all.datastructure.PLinkedList;
 
 public class App {
 	public static void main(String[] args) {
-		PLinkedList linkedList = new LinkedListOperation();
+		PLinkedList<Integer> linkedList = new LinkedListOperation<Integer>();
 		linkedList.add(10);
 		linkedList.add(20);
 		linkedList.add(30);

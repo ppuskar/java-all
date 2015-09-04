@@ -9,16 +9,16 @@ import com.java.all.datastructure.linkedlist.model.SinglyNode;
  * @author Illusion
  * @created Aug 24, 2015
  */
-public class LinkedListOperation implements PLinkedList {
+public class LinkedListOperation<T> implements PLinkedList<T> {
 
-	private SinglyNode root;
+	private SinglyNode<T> root;
 
 	/**
 	 * {@inheritDoc}
 	 */
-	@Override	
-	public void add(int data) {
-		SinglyNode nodeToAdd = createNode(data), hold = root;
+	@Override
+	public void add(T data) {
+		SinglyNode<T> nodeToAdd = createNode(data), hold = root;
 		if (root == null) {
 			root = nodeToAdd;
 		} else {
@@ -36,8 +36,8 @@ public class LinkedListOperation implements PLinkedList {
 	 *            the value which will be populated as data inside the node.
 	 * @return {@link SinglyNode}
 	 */
-	private SinglyNode createNode(int data) {
-		SinglyNode singlyNode = new SinglyNode();
+	private SinglyNode<T> createNode(T data) {
+		SinglyNode<T> singlyNode = new SinglyNode<T>();
 		singlyNode.setData(data);
 		return singlyNode;
 	}
@@ -47,7 +47,7 @@ public class LinkedListOperation implements PLinkedList {
 	 */
 	@Override
 	public void printList() {
-		SinglyNode hold = root;
+		SinglyNode<T> hold = root;
 		while (hold != null) {
 			System.out.print("->" + hold.getData());
 			hold = hold.getNext();
@@ -60,7 +60,7 @@ public class LinkedListOperation implements PLinkedList {
 	 */
 	@Override
 	public void reverse() {
-		SinglyNode curr = root, prev = null, next = null;
+		SinglyNode<T> curr = root, prev = null, next = null;
 		while (curr != null) {
 			next = curr.getNext();
 			curr.setNext(prev);
@@ -74,8 +74,8 @@ public class LinkedListOperation implements PLinkedList {
 	 * {@inheritDoc}
 	 */
 	@Override
-	public void deleteNode(int data) {
-		SinglyNode hold = root, temp;
+	public void deleteNode(T data) {
+		SinglyNode<T> hold = root, temp;
 		while (hold.getNext() != null) {
 			temp = hold.getNext();
 			if (hold.getData() == data) {
