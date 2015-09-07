@@ -1,4 +1,4 @@
-package com.java.all.datastructure.linkedlist.model;
+package com.java.all.datastructure.model;
 
 /**
  * Data structure capable of holding data and pointer to the next record.
