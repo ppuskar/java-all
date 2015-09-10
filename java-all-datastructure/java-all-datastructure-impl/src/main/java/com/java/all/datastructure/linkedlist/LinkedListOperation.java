@@ -1,7 +1,7 @@
 package com.java.all.datastructure.linkedlist;
 
 import com.java.all.datastructure.PLinkedList;
-import com.java.all.datastructure.linkedlist.model.SinglyNode;
+import com.java.all.datastructure.model.SinglyNode;
 
 /**
  * Implementation for {@link PLinkedList}
