@@ -101,4 +101,9 @@ public class PQueueImpl<T> implements PQueue<T> {
 		return DATA_ARRAY[front];
 	}
 
+	@Override
+	public int capacity() {
+		return this.currentQueueCapacity;
+	}
+
 }

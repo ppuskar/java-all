@@ -9,5 +9,7 @@ public interface PQueue<T> {
 	int size();
 
 	T peek() throws PQueueException;
+	
+	int capacity();
 
 }
