@@ -37,7 +37,7 @@ public class SinglyNode<T> implements PNode {
 	 * @param next
 	 *            the next to set
 	 */
-	public void setNext(SinglyNode next) {
+	public void setNext(SinglyNode<T> next) {
 		this.next = next;
 	}
 }
