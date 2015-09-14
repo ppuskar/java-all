@@ -2,7 +2,7 @@ package com.java.all.datastructure.stack;
 
 import com.java.all.datastructure.PStack;
 
-public class StackLinkedListImpl<T> implements PStack<T> {
+public class PStackImpl<T> implements PStack<T> {
 
 	private T[] DATA_STORE;
 	private int topIndex;
@@ -10,9 +10,15 @@ public class StackLinkedListImpl<T> implements PStack<T> {
 	private int size = 0;
 
 	@SuppressWarnings("unchecked")
-	public StackLinkedListImpl(int initialSize) {
+	public PStackImpl(int initialSize) {
 		this.topIndex = -1;
 		DATA_STORE = (T[]) new Object[Math.max(initialSize, defaultCapacity)];
+	}
+
+	@SuppressWarnings("unchecked")
+	public PStackImpl() {
+		this.topIndex = -1;
+		DATA_STORE = (T[]) new Object[defaultCapacity];
 	}
 
 	@Override
@@ -38,8 +44,11 @@ public class StackLinkedListImpl<T> implements PStack<T> {
 
 	@Override
 	public T pop() {
-		if (topIndex != -1)
+
+		if (topIndex != -1) {
+			size--;
 			return DATA_STORE[topIndex--];
+		}
 		System.out.println("Stack is empty..");
 		return null;
 	}
