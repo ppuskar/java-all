@@ -2,14 +2,14 @@ package com.java.all.datastructure;
 
 public interface PQueue<T> {
 
-	void enqueue(T data) throws PQueueException;
+    void enqueue(T data);
 
-	T dequeue() throws PQueueException;
+    T dequeue() throws PQueueException;
 
-	int size();
+    int size();
 
-	T peek() throws PQueueException;
-	
-	int capacity();
+    T peek() throws PQueueException;
+
+    int capacity();
 
 }

@@ -13,6 +13,7 @@ public class TreeNode<T> {
 	private T data;
 	private TreeNode<T> right;
 	private TreeNode<T> left;
+	private int level;
 
 	/**
 	 * @return the data
@@ -57,5 +58,20 @@ public class TreeNode<T> {
 	 */
 	public void setLeft(TreeNode<T> left) {
 		this.left = left;
+	}
+
+	/**
+	 * @return the level
+	 */
+	public int getLevel() {
+		return level;
+	}
+
+	/**
+	 * @param level
+	 *            the level to set
+	 */
+	public void setLevel(int level) {
+		this.level = level;
 	}
 }
