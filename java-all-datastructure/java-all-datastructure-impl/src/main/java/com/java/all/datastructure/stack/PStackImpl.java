@@ -2,6 +2,17 @@ package com.java.all.datastructure.stack;
 
 import com.java.all.datastructure.PStack;
 
+/**
+ * This is an implementation class for {@link PStack}. It provides array based
+ * implementation of stack. It also make sure that the stack never exhaust the
+ * number of available slots(or size o be precise). It expands the size as per
+ * requirement.
+ * 
+ * @author Illusion
+ *
+ * @param <T>
+ *            here T is the type of data which the stack is going to hold.
+ */
 public class PStackImpl<T> implements PStack<T> {
 
 	private T[] DATA_STORE;

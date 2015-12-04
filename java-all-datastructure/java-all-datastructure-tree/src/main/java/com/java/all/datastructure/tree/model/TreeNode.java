@@ -1,4 +1,4 @@
-package com.java.all.datastructure;
+package com.java.all.datastructure.tree.model;
 
 /**
  * Node representing datastructure to represent a tree.

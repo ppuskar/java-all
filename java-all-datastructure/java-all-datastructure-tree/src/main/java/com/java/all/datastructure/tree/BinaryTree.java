@@ -3,9 +3,9 @@ package com.java.all.datastructure.tree;
 import com.java.all.datastructure.PQueue;
 import com.java.all.datastructure.PQueueException;
 import com.java.all.datastructure.PStack;
-import com.java.all.datastructure.TreeNode;
 import com.java.all.datastructure.queue.PQueueImpl;
 import com.java.all.datastructure.stack.PStackImpl;
+import com.java.all.datastructure.tree.model.TreeNode;
 
 /**
  * Binary search tree representation for Integer value
