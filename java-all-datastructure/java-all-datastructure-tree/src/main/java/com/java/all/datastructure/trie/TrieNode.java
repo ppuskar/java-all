@@ -5,9 +5,16 @@ package com.java.all.datastructure.trie;
  */
 public class TrieNode {
 
+	/** The value. */
 	private char value;
+
+	/** The is word. */
 	private boolean isWord;
+
+	/** The meaning. */
 	private String meaning;
+
+	/** The alphabates. */
 	private TrieNode[] alphabates;
 
 	public TrieNode(char value) {
