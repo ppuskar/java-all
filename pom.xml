@@ -13,6 +13,7 @@
 		<module>java-all-design-pattern</module>
 		<module>java-all-thread</module>
 		<module>java-all-datastructure</module>
+		<module>java-all-web</module>
 	</modules>
 
 	<build>

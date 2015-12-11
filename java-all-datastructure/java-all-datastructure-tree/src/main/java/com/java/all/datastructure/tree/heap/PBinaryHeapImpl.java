@@ -45,5 +45,4 @@ public class PBinaryHeapImpl extends AbstractBinaryHeapImpl {
 	protected int getHeapLength() {
 		return size;
 	}
-
 }
