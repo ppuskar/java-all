@@ -3,7 +3,7 @@ package com.java.all.datastructure.tree.heap;
 /**
  * A Binary Heap is a Binary Tree with following properties.
  * <ol>
- * <li>It’s a complete tree (All levels are completely filled except possibly
+ * <li>It is a complete tree (All levels are completely filled except possibly
  * the last level and the last level has all keys as left as possible). This
  * property of Binary Heap makes them suitable to be stored in an array.</li>
  * <li>A Binary Heap is either Min Heap or Max Heap. In a Min Binary Heap, the
